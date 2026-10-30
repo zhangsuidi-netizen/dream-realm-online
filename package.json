@@ -1,0 +1,13 @@
+{
+  "name": "dream-realm-community-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Original online fantasy arcade game with server-managed virtual chips.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "admin:create": "node scripts/create-admin.js",
+    "check": "node --check server.js && node --check public/app.js && node --check public/admin.js && node --check scripts/create-admin.js"
+  },
+  "engines": { "node": ">=20" }
+}
